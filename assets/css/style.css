@@ -1,0 +1,467 @@
+/*-----------------------------
+GENERAL FORMATTING
+-----------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding-top: 64px;
+  position: relative;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background-color: rgba(166, 76, 255, 1);
+}
+
+.flextainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row {
+  width: 100%;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.full-pg {
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  transition: all .5s ease;
+}
+
+.img-resp {
+  width: 100%;
+  height: auto;
+}
+
+.center-txt {
+  text-align: center;
+}
+
+.emp {
+  font-weight: 900;
+}
+
+
+/*-----------------------------
+COLOR SCHEME
+-----------------------------*/
+
+.black {
+  background-color: rgba(0, 0, 0, .8);
+  color: rgba(255, 255, 255, 1);
+}
+
+.black a {
+  color: rgba(255, 115, 185, 1);
+}
+
+.black a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.black .emp {
+  color: rgba(76, 166, 255, 1);
+}
+
+.cerulean {
+  background-color: rgba(76, 166, 255, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.cerulean a {
+  color: rgba(166, 76, 255, 1);
+}
+
+.cerulean a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.cerulean .emp {
+  color: rgba(0, 0, 0, 1);
+}
+
+.cottoncandy-pink {
+  background-color: rgba(255, 115, 185, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.cottoncandy-pink a {
+  color: rgba(166, 76, 255, 1);
+}
+
+.cottoncandy-pink a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.cottoncandy-pink .emp {
+  color: rgba(0, 0, 0, 1);
+}
+
+.lavender {
+  background-color: rgba(166, 76, 255, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.lavender a {
+  color: rgba(255, 115, 185, 1);
+}
+
+.lavender a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.lavender .emp {
+  color: rgba(0, 0, 0, 1);
+}
+
+
+/*-----------------------------
+BUTTONS
+-----------------------------*/
+
+
+/*-----------------------------
+NAVBAR
+-----------------------------*/
+
+#nav {
+  width: 100%;
+  height: 64px;
+  padding: 0px 32px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 9999;
+}
+
+#nav a {
+  width: 100%;
+  padding: 16px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.nav-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.nav-tabs {
+  width: 80%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav-tabs li {
+  display: inline-block;
+  list-style: none;
+}
+
+.nav-tabs li a:hover {
+  background-color: rgba(76, 166, 255, 1);
+}
+
+.nav-toggle .nav-tabs {
+  width: 100%;
+  display: none;
+  position: absolute;
+  top: 64px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.nav-toggle .nav-tabs li {
+  display: block;
+  text-align: center;
+}
+
+.nav-toggle .nav-tog-btn {
+  width: 2em;
+  height: 2em;
+  padding: 0px;
+  background-color: transparent;
+  font-size: 1.25em;
+  color: white;
+  border: 2px solid white;
+}
+
+.nav-toggle .nav-tog-btn:focus {
+  outline: none;
+}
+
+
+/*-----------------------------
+PROFILE
+-----------------------------*/
+
+.profile {
+  /*padding: 32px;*/
+}
+
+.profile .profile-pic {
+  width: 250px;
+  height: 250px;
+  border: 3px solid white;
+  box-sizing: border-box;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, .4);
+  -moz-box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, .4);
+  box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, .4);
+  overflow: hidden;
+}
+
+.profile .profile-name {
+  width: 100%;
+  padding: 16px 0px;
+  margin-top: 16px;
+  text-align: center;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.profile-who {
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile .profile-bio {
+  margin-top: 16px;
+  padding: 0px;
+  justify-content: space-between;
+}
+
+.profile .profile-bio li {
+  width: 100%;
+  margin-bottom: 16px;
+  list-style: none;
+}
+
+.soc-med-links {
+  margin: 0px;
+  padding: 16px;
+  text-align: center;
+}
+
+.soc-med-links li {
+  margin: 0px 8px;
+  display: inline-block;
+  list-style: none;
+  font-size: 2.5em;
+}
+
+.soc-med-links .soc-name {
+  font-size: 14px;
+}
+
+.profile-nav {
+  display: none;
+}
+
+
+/*-----------------------------
+ABOUT
+-----------------------------*/
+
+
+/*-----------------------------
+PROJECTS
+-----------------------------*/
+
+.gallery {
+  padding: 16px 0px;
+  position: relative;
+  /*background-color: blue;*/
+  color: black;
+  justify-content: space-between;
+}
+
+.gallery-item {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 16px;
+  background-color: white;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+
+.gallery-item-img {
+  width: 100%;
+  height: 150px;
+  margin: 0px;
+  display: block;
+}
+
+.gallery-item-details {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+.gallery-item a {
+  position: relative;
+  z-index: 1;
+}
+
+.carousel-mode {
+  height: 200px;
+  overflow: hidden;
+}
+
+.gallery-nav{
+  display: none;
+}
+
+.carousel-mode .gallery-nav {
+  width: 100%;
+  padding: 0px 16px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  box-sizing: border-box;
+  bottom: 32px;
+}
+
+
+/*-----------------------------
+CONTACT
+-----------------------------*/
+
+#contact-form {
+  background-color: white;
+  padding: 32px;
+  color: black;
+  text-align: left;
+}
+
+#contact-form .form-title {
+  color: rgba(166, 76, 255, 1);
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 1);
+}
+
+.form-input {
+  width: 100%;
+  min-height: 32px;
+  margin: 16px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.form-input .input-icon {
+  width: 32px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  box-sizing: border-box;
+  order: 0;
+}
+
+.form-input input,
+.form-input textarea {
+  height: 48px;
+  width: calc(100% - 32px);
+  padding: 8px;
+  font-family: inherit;
+  font-size: 16px;
+  border: none;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
+  box-sizing: border-box;
+  order: 1;
+}
+
+.form-input textarea {
+  max-width: calc(100% - 32px);
+  min-height: 124px;
+}
+
+.form-input input:focus,
+.form-input textarea:focus {
+  outline: none;
+  border-top: 2px solid rgba(76, 166, 255, 1);
+  border-bottom: 2px solid rgba(76, 166, 255, 1);
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.form-input input:focus + .input-icon,
+.form-input textarea:focus + .input-icon {
+  background-color: rgba(76, 166, 255, 1);
+  color: rgba(0, 0, 0, 1);
+  font-weight: bold;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.form-input input:hover + .input-icon,
+.form-input textarea:hover + .input-icon {
+  background-color: rgba(76, 166, 255, 1);
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.form-btn {
+  width: 64px;
+  padding: 16px;
+  background-color: rgba(76, 166, 255, 1);
+  font-weight: bold;
+  border: none;
+  box-sizing: content-box;
+}
+
+.form-btn:hover {
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  -webkit-transition: background-color .5s ease;
+  -moz-transition: background-color .5s ease;
+  -o-transition: background-color .5s ease;
+  transition: background-color .5s ease;
+}
+
+.form-btn:active,
+.form-btn:focus {
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(76, 166, 255, 1);
+  outline: none;
+}
+
+
+/*-----------------------------
+MEDIA QUERIES
+-----------------------------*/
+
+@media only screen and (max-width: 768px) {}
